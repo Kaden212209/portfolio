@@ -161,3 +161,9 @@ footer {
     font-size: 14px;
     color: #666;
 }
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
