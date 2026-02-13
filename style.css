@@ -1,1 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f1117;
+    color: #eaeaea;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1d1f26;
+    background: rgba(15,17,23,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    padding: 140px 8% 100px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 20%, #1c1f2b, #0f1117 60%);
+}
+
+.hero h1 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #b5b5b5;
+}
+
+.gallery-section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project {
+    background: #161922;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1f2330;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(109,93,252,0.2);
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info p {
+    color: #9fa3b0;
+    font-size: 14px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay {
+    transition-delay: 0.2s;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #666;
+}
 
